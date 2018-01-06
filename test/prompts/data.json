@@ -1,0 +1,9 @@
+{
+  "app": {
+    "name": "frontend-app",
+    "authorName": "Vasya Pupkin",
+    "authorEmail": "vasya@example.com",
+    "packageManager": "yarn",
+    "run": false
+  }
+}

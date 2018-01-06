@@ -1,0 +1,81 @@
+{
+  "name": "generator-front-app",
+  "version": "0.1.0",
+  "description": "Yeoman generator for Frontend App.",
+  "homepage": "https://github.com/ruslankhh/generator-front-app",
+  "author": {
+    "name": "Ruslan Khusnetdinov",
+    "email": "ruslankhh@gmail.com",
+    "url": "http://ruslankhh.com"
+  },
+  "main": "generators/app/index.js",
+  "files": ["generators"],
+  "keywords": ["yeoman", "generator", "frontend", "yeoman-generator"],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "coveralls": "^2.13.1",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-config-semistandard": "^12.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "lint-staged": "^4.2.1",
+    "nsp": "^2.8.1",
+    "prettier": "^1.7.0",
+    "watch": "^1.0.2",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.0",
+    "chalk": "^2.1.0",
+    "fs-extra": "^4.0.2",
+    "is-semver": "^1.0.7",
+    "lodash": "^4.17.4",
+    "lodash-checkit": "^2.1.0",
+    "yeoman-generator": "^2.0.1",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "coverageDirectory": "<rootDir>/coverage",
+    "roots": ["<rootDir>/test"],
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/(__tests__|tests|test)/**/*.js?(x)",
+      "**/?(*.)(spec|test).js?(x)"
+    ]
+  },
+  "scripts": {
+    "clean": "del generators",
+    "copy": "cp -R src/* .",
+    "compile": "babel src -d .",
+    "prebuild": "npm run clean && npm run copy",
+    "build": "npm run compile",
+    "postbuild": "",
+    "watch": "watch 'npm run copy && npm run compile' src",
+    "lint": "eslint .",
+    "pretest": "npm run lint && npm run build",
+    "test": "jest",
+    "precommit": "lint-staged",
+    "prepare": "nsp check"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  },
+  "repository": "git@github.com:ruslankhh/generator-front-app.git",
+  "license": "MIT"
+}
