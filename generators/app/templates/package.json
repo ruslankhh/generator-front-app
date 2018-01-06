@@ -1,0 +1,22 @@
+{
+  "name": "<%= app.name %>",
+  "version": "0.1.0",
+  "description": "",
+  "author": {
+    "name": "<%= app.authorName %>",
+    "email": "<%= app.authorEmail %>"
+  },
+  "main": "gulpfile.js",
+  "keywords": ["frontend"],
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0"
+  },
+  "private": true,
+  "license": "ISC"
+}

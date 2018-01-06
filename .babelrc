@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    "**/templates"
+  ],
+  "presets": [
+    ["env", { "exclude": ["transform-es2015-classes"] }],
+    "stage-3"
+  ],
+  "plugins": [
+    "add-module-exports"
+  ]
+}
