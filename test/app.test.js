@@ -3,7 +3,7 @@ import assert from 'yeoman-assert';
 import helpers from 'yeoman-test';
 import data from './prompts/data.json';
 
-describe('generator-front-app:app', () => {
+describe('generator-front2-app:app', () => {
   beforeAll(() => {
     jest.setTimeout(300000);
 

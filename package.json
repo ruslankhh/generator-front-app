@@ -1,8 +1,8 @@
 {
-  "name": "generator-front-app",
+  "name": "generator-front2-app",
   "version": "0.1.0",
   "description": "Yeoman generator for Frontend App.",
-  "homepage": "https://github.com/ruslankhh/generator-front-app",
+  "homepage": "https://github.com/ruslankhh/generator-front2-app",
   "author": {
     "name": "Ruslan Khusnetdinov",
     "email": "ruslankhh@gmail.com",
@@ -76,6 +76,6 @@
     "*.js": ["eslint --fix", "git add"],
     "*.json": ["prettier --write", "git add"]
   },
-  "repository": "git@github.com:ruslankhh/generator-front-app.git",
+  "repository": "git@github.com:ruslankhh/generator-front2-app.git",
   "license": "MIT"
 }

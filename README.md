@@ -1,19 +1,19 @@
-# generator-front-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-front2-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Yeoman generator for Frontend App.
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-front-app using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-front2-app using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-front-app
+npm install -g generator-front2-app
 ```
 
 Then generate your new project:
 
 ```bash
-yo front-app
+yo front2-app
 ```
 
 ## Getting To Know Yeoman
@@ -27,9 +27,9 @@ yo front-app
 
 MIT © [Ruslan Khusnetdinov](http://ruslankhh.com)
 
-[npm-image]: https://badge.fury.io/js/generator-front-app.svg
-[npm-url]: https://npmjs.org/package/generator-front-app
-[travis-image]: https://travis-ci.org/ruslankhh/generator-front-app.svg?branch=master
-[travis-url]: https://travis-ci.org/ruslankhh/generator-front-app
-[daviddm-image]: https://david-dm.org/ruslankhh/generator-front-app.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/ruslankhh/generator-front-app
+[npm-image]: https://badge.fury.io/js/generator-front2-app.svg
+[npm-url]: https://npmjs.org/package/generator-front2-app
+[travis-image]: https://travis-ci.org/ruslankhh/generator-front2-app.svg?branch=master
+[travis-url]: https://travis-ci.org/ruslankhh/generator-front2-app
+[daviddm-image]: https://david-dm.org/ruslankhh/generator-front2-app.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/ruslankhh/generator-front2-app
